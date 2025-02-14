@@ -1,0 +1,7 @@
+version: '3'
+services:
+  webapp:
+    image: my-webapp:latest
+    ports:
+      - "80:80"
+    restart: always

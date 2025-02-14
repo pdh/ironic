@@ -1,0 +1,13 @@
+infrastructure:
+  hosts:
+    - name: prod-1
+      ip: 192.168.0.100
+      user: foo
+      
+services:
+  - name: web-app
+    image: my-webapp:latest
+    compose_file: docker-compose.yml
+    files:
+      - src: configs/nginx.conf
+        dest: /etc/nginx/nginx.conf

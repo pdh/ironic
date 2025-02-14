@@ -1,0 +1,10 @@
+[project]
+name = "ironic"
+description = "dumber deployments"
+version = "0.0.1"
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+    'setuptools', 'wheel'
+]
